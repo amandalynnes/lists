@@ -27,7 +27,8 @@ __author__ = "Amanda Simmons"
 
 def match_ends(words):
     # your code here
-    return
+    n_list = len([word for word in words if len(word) >= 2 and word[0] == word[-1]])
+    return n_list
 
 
 # B. front_x
