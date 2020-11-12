@@ -44,7 +44,11 @@ def match_ends(words):
 
 def front_x(words):
     # your code here
-    return
+    s_lst = sorted(words)
+    lst = [s_lst.index(word) for word in s_lst if word[0] == "x"]
+
+    return s_lst[lst[0]:] + s_lst[:lst[0]]
+
 
 
 # C. sort_last
