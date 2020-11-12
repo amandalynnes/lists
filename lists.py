@@ -16,7 +16,7 @@ Kenzie assignment: Lists!
 
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-__author__ = "???"
+__author__ = "Amanda Simmons"
 
 # A. match_ends
 # Given a list of strings, return the count of the number of
