@@ -17,7 +17,7 @@ Kenzie assignment: Lists!
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
 __author__ = "Amanda Simmons, Geeksforgeeks, stackoverflow."
-__author__ = "Amanda Simmons, realpython, python docs, programiz and digital ocean."
+__author__ = "Amanda Simmons, realpython, python docs, programiz,digitalocean."
 # A. match_ends
 # Given a list of strings, return the count of the number of
 # strings where the string length is 2 or more and the first
@@ -27,7 +27,7 @@ __author__ = "Amanda Simmons, realpython, python docs, programiz and digital oce
 
 def match_ends(words):
     # your code here
-    n_list = len([word for word in words if len(word) >= 2 and word[0] == word[-1]])
+    n_list = len([w for w in words if len(w) >= 2 and w[0] == w[-1]])
     return n_list
 
 
@@ -65,8 +65,9 @@ def sort_last(tuples):
     # tuple_lst = [group for group in tuples]
     # tup_sort = [group for group in tuples]
     # last_tup = tup_sort.reverse()
-    tuples.sort(key=str(tuples[1]))
-    return sorted(tuples)
+    # tuples.sort(key=str(tuples[1]))
+    # return sorted(tuples)
+    print(tuples)
 
 
 # D. remove_adjacent
@@ -79,10 +80,11 @@ def sort_last(tuples):
 
 
 def remove_adjacent(nums):
-    # your code here
-    removed_lst = []
+    if nums == []:
+        return []
+    removed_lst = [nums.pop(0)]
     for index, num in enumerate(nums):
-        if num != num[index-1]:
+        if num != removed_lst[-1]:
             removed_lst.append(num)
     return removed_lst
 
