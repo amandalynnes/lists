@@ -62,10 +62,11 @@ def front_x(words):
 
 def sort_last(tuples):
     # your code here
-    tuple_lst = [list(group) for group in tuples]
-    tup_sort = [group.reverse() for group in tuple_lst]
+    # tuple_lst = [group for group in tuples]
+    # tup_sort = [group for group in tuples]
     # last_tup = tup_sort.reverse()
-    return tup_sort
+    tuples.sort(key=lambda x: x[1])
+    return sorted(tuples)
 
 
 # D. remove_adjacent
@@ -98,7 +99,13 @@ def remove_adjacent(nums):
 
 def zip_merge(list1, list2):
     # your code here
-    return
+    zipped = zip(list1, list2)
+    # merged_lst = list(zipped)
+    # result = [" ".join(zipped) for tup in zipped]
+    # return str(result)
+
+    result = list(map(''.join, zipped))
+    return result
 
 
 # F. empty_filter
