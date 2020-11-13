@@ -16,8 +16,8 @@ Kenzie assignment: Lists!
 
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-__author__ = "Amanda Simmons"
-
+__author__ = "Amanda Simmons, Geeksforgeeks, stackoverflow."
+__author__ = "Amanda Simmons, realpython, python docs, programiz and digital ocean."
 # A. match_ends
 # Given a list of strings, return the count of the number of
 # strings where the string length is 2 or more and the first
@@ -65,7 +65,7 @@ def sort_last(tuples):
     # tuple_lst = [group for group in tuples]
     # tup_sort = [group for group in tuples]
     # last_tup = tup_sort.reverse()
-    tuples.sort(key=lambda x: x[1])
+    tuples.sort(key=str(tuples[1]))
     return sorted(tuples)
 
 
@@ -104,6 +104,8 @@ def zip_merge(list1, list2):
     # result = [" ".join(zipped) for tup in zipped]
     # return str(result)
 
+    # https://www.geeksforgeeks.org/python-merge-list-of-tuple-into-list-by-joining-the-strings/?ref=rp
+    # used the resource above^^
     result = list(map(''.join, zipped))
     return result
 
