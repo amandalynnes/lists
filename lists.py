@@ -50,7 +50,6 @@ def front_x(words):
     return s_lst[lst[0]:] + s_lst[:lst[0]]
 
 
-
 # C. sort_last
 # Given a list of non-empty tuples, return a list sorted in
 # increasing order by the last element in each tuple.
