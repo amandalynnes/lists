@@ -16,7 +16,7 @@ Kenzie assignment: Lists!
 
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-__author__ = "Amanda Simmons, Geeksforgeeks, stackoverflow."
+__author__ = "Amanda Simmons, Jonny, Geeksforgeeks, stackoverflow."
 __author__ = "Amanda Simmons, realpython, python docs, programiz,digitalocean."
 # A. match_ends
 # Given a list of strings, return the count of the number of
@@ -62,12 +62,8 @@ def front_x(words):
 
 def sort_last(tuples):
     # your code here
-    # tuple_lst = [group for group in tuples]
-    # tup_sort = [group for group in tuples]
-    # last_tup = tup_sort.reverse()
-    # tuples.sort(key=str(tuples[1]))
-    # return sorted(tuples)
-    print(tuples)
+    new_tups = sorted(tuples, key=lambda tuples: tuples[-1])
+    return new_tups
 
 
 # D. remove_adjacent
@@ -143,4 +139,9 @@ def empty_filter(list1):
 
 def linear_merge(list1, list2):
     # your code here
-    return
+    new_lst = [list1[0]]
+    while list2:
+        new_lst.append(list2[0])
+        list2.pop(0)
+    new_lst = sorted(new_lst + list1[1:])
+    return new_lst
