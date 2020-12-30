@@ -2,7 +2,7 @@
   "tests": [
     {
       "name": "unit tests",
-      "setup": "",
+      "setup": "pip install flake8",
       "run": "python3 -m unittest tests/test_lists.py",
       "input": "",
       "output": "",
