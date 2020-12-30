@@ -3,7 +3,7 @@
     {
       "name": "unit tests",
       "setup": "sudo -H pip install flake8",
-      "run": "python3 -m unittest tests/test_lists.py",
+      "run": "git checkout dev && python3 -m unittest tests/test_lists.py",
       "input": "",
       "output": "",
       "comparison": "included",
